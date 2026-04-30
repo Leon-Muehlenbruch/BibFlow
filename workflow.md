@@ -46,6 +46,8 @@ Fill the persist blocks in your own words:
 
 Highlights are raw input. The synthesis is yours, and it survives Zotero re-imports.
 
+> **Tip.** When a green-highlighted key term deserves its own atomic note, select it and run **Promote selection to concept note** from the Launcher. One keystroke creates `2 Wiki/Concept Notes/<term>.md` from the Concept Note template and replaces the selection with `[[<term>]]`. See [Templater commands](templater) for details.
+
 ## 5. Cite in your draft
 
 Word: Zotero toolbar → Add Citation → search → insert.

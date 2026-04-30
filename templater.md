@@ -14,6 +14,7 @@ All actions reach you from one hotkey: **Option+T** (the Launcher).
 ─── Literature ───
 Import Paper from Zotero
 Fetch References for the current paper
+Promote selection to concept note
 
 Refresh All Literature
 Refresh Paper Metrics
@@ -27,6 +28,7 @@ Paper Search  (experimental)
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | Import Paper from Zotero             | opens Zotero Integrations import modal                                                          |
 | Fetch References for the current paper | reads the open notes DOI, queries OpenAlex, writes a list of cited works under `## Cited works` |
+| Promote selection to concept note    | takes the selected text, creates `2 Wiki/Concept Notes/<text>.md` from the Concept Note template, replaces the selection with `[[<text>]]`. If the concept already exists, just inserts the wikilink. |
 
 ## Bulk actions
 
