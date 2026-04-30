@@ -1,0 +1,19 @@
+/* Zotero highlight colors rendered in Obsidian via <mark class="hltr-COLOR">.
+ *
+ * Matches Zotero 6's native PDF highlight palette at ~50% opacity so text
+ * stays readable on both light and dark themes. The `80` suffix in each
+ * hex value is the alpha channel in 8-digit hex (0x80 ≈ 50%).
+ *
+ * Enable this snippet in Settings → Appearance → CSS snippets.
+ * Populated by the Literature Note template via the Zotero Integration
+ * plugin — each annotation's color lives in `annotation.colorCategory`.
+ */
+
+mark.hltr-yellow  { background: #ffd40080; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-green   { background: #5fb23680; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-red     { background: #ff666680; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-blue    { background: #2ea8e580; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-purple  { background: #a28ae980; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-magenta { background: #e056b080; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-orange  { background: #f1983780; color: inherit; border-radius: 2px; padding: 0 2px; }
+mark.hltr-gray    { background: #aaaaaa80; color: inherit; border-radius: 2px; padding: 0 2px; }

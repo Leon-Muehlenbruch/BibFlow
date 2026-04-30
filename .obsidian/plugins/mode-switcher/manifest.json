@@ -1,0 +1,9 @@
+{
+  "id": "mode-switcher",
+  "name": "Mode Switcher Buttons",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Three buttons to switch between reading, source, and live preview.",
+  "author": "Leon",
+  "isDesktopOnly": false
+}

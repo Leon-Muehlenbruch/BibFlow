@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "mode-switcher",
+    "juggl-embed-border",
+    "zotero-highlights"
+  ]
+}

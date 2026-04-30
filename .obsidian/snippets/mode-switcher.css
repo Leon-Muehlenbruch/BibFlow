@@ -1,0 +1,54 @@
+/* Container: segmented icon group */
+.mode-switcher-group {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Individual buttons */
+.mode-switcher-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  color: var(--text-muted);
+  background: transparent;
+  transition: background 120ms ease, color 120ms ease;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.mode-switcher-btn:last-child {
+  border-right: none;
+}
+
+.mode-switcher-btn .svg-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mode-switcher-btn:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.mode-switcher-btn.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.mode-switcher-btn.is-active:hover {
+  background: var(--interactive-accent-hover);
+}
+
+/* Hide Obsidian's native reading/editing toggle by aria-label prefix.
+   Covers English ("Current view:") and German ("Aktuelle Ansicht:"). */
+.view-actions > .clickable-icon[aria-label^="Current view:"],
+.view-actions > .clickable-icon[aria-label^="Aktuelle Ansicht:"] {
+  display: none !important;
+}

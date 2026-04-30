@@ -1,0 +1,20 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "1 Literature",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "png",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [],
+  "exportFormats": [
+    {
+      "name": "Literature Note",
+      "outputPathTemplate": "1 Literature/{{citekey}}.md",
+      "imageOutputPathTemplate": "9 Orga/_attachments/Zotero/",
+      "imageBaseNameTemplate": "{{citekey}}",
+      "templatePath": "9 Orga/Templates/Literature Note.md"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}
