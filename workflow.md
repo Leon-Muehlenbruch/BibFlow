@@ -21,11 +21,17 @@ Open the PDF in Zotero. Highlight:
 
 Add inline comments to highlights for reactions or open questions.
 
+![Zoteros built-in PDF reader, with yellow general highlights and green key-term highlights ready for import.](assets/screenshots/import-zotero.png)
+
 ## 3. Import to Obsidian
 
 Cmd+Shift+I (or Option+T → Import Paper from Zotero) → search title → Enter.
 
+![Zotero Integrations import modal in Obsidian — start typing the title to fuzzy-search your library.](assets/screenshots/import-obsidian-1.png)
+
 Creates `1 Literature/{{citekey}}.md` with metadata, highlights split by colour, and empty synthesis blocks.
+
+![The freshly-imported literature note: frontmatter, abstract, highlights grouped by colour, and empty persist blocks ready for synthesis.](assets/screenshots/import-obsidian-2.png)
 
 ## 4. Synthesise
 
