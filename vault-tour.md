@@ -21,8 +21,6 @@ The BibFlow vault has a fixed structure. Each folder has one role; the numeric p
 | `8 Meeting Notes/`           | supervisor and reading-group notes                          |
 | `9 Orga/`                    | templates and Templater commands — never edited by hand     |
 
-![A concept note in 2 Wiki/Concept Notes/, with linked back-references to literature notes that mention it.](assets/screenshots/concept-note-example.png)
-
 ## Navigating with wikilinks
 
 Type `[[` anywhere; Obsidian autocompletes from existing notes. `[[chuo2020insights]]` jumps to that paper note; `[[MICP]]` jumps to the concept note. The Backlinks pane (right sidebar) shows everything that links back to the open note — instant context.
@@ -73,6 +71,10 @@ Papers cited by 2 or more of your literature notes — i.e. references that keep
 Dataview-rendered list of all concept notes in `2 Wiki/Concept Notes/`, showing each terms one-line definition.
 
 ![Glossary — auto-rendered list of concept notes with their definitions.](assets/screenshots/glossary.png)
+
+Each row in the Glossary table is sourced from one concept note in `2 Wiki/Concept Notes/`. A concept note looks like this:
+
+![A concept note in `2 Wiki/Concept Notes/`. The frontmatter holds the term + definition that the Glossary pulls; the body is yours, with backlinks to the literature notes that mention this concept.](assets/screenshots/concept-note-example.png)
 
 ### Paper Search *(experimental)*
 
