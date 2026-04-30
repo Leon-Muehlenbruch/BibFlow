@@ -53,6 +53,7 @@ The numbered prefixes mean the folders stay sorted in the file pane: control not
 
 `9 Orga/Templates/Literature Note.md` is rendered by Zotero Integration on import. The output looks like:
 
+{% raw %}
 ```
 ---
 citekey: chuo2020insights
@@ -94,8 +95,9 @@ tags: [literature]
 ## Cited works
 {% persist "references" %}…{% endpersist %}
 ```
+{% endraw %}
 
-The `{% persist %}` blocks survive Zotero re-imports — your own notes never get overwritten. The Highlights section is rebuilt fresh from Zotero on every re-import.
+The {% raw %}`{% persist %}`{% endraw %} blocks survive Zotero re-imports — your own notes never get overwritten. The Highlights section is rebuilt fresh from Zotero on every re-import.
 
 The CSS snippet at `.obsidian/snippets/zotero-highlights.css` colours the `<mark>` tags to match Zotero. Enable it in Settings → Appearance → CSS snippets.
 

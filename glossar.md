@@ -18,5 +18,5 @@ nav_order: 99
 | **Obsidian Git**        | An Obsidian plugin that auto-commits & pushes the vault to a Git remote.|
 | **OpenAlex**            | A free, no-auth bibliographic database; powers `Paper Search.md` and `Paper Metrics.md`. |
 | **FWCI**                | Field-Weighted Citation Impact — a normalised citation count from OpenAlex. |
-| **persist block**       | Obsidian-template syntax (`{% persist "x" %}…{% endpersist %}`) that survives re-imports. |
+| **persist block**       | Obsidian-template syntax ({% raw %}`{% persist "x" %}…{% endpersist %}`{% endraw %}) that survives re-imports. |
 | **Just the Docs**       | The Jekyll theme this site uses.                                        |
