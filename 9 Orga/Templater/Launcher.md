@@ -16,6 +16,7 @@ const items = [
   // Per-paper actions: run these on one specific paper note at a time.
   { kind: "template", label: "Import Paper from Zotero",              path: "9 Orga/Templater/Import from Zotero.md" },
   { kind: "template", label: "Fetch References for the current paper", path: "9 Orga/Templater/Fetch References.md" },
+  { kind: "template", label: "Promote selection to concept note",         path: "9 Orga/Templater/Promote Selection to Concept.md" },
   // Blank spacer — marks the jump from per-paper actions to bulk actions.
   { kind: "sep",      label: " " },
   // Bulk actions: run across your whole library at once.
