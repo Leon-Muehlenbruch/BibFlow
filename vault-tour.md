@@ -33,8 +33,6 @@ The left ribbons graph icon opens the **global graph view** for the whole vault.
 
 Each literature note also embeds its own local graph inline (Juggl block at the bottom), populated by `fetch_references.py`.
 
-![The local graph view: red node is the current paper, surrounding nodes are its cited works.](assets/screenshots/shared-references-graph.png)
-
 ## Search
 
 | Shortcut       | What it does                                               |
@@ -65,6 +63,10 @@ Sortable table of citation counts, FWCI, journal h-index, and open-access status
 Papers cited by 2 or more of your literature notes — i.e. references that keep showing up across your reading. A reliable signal for foundational works you have not read yet. Click any unresolved entry to create that literature note instantly.
 
 ![Shared References — papers cited by multiple of your notes, with citation counts and source links.](assets/screenshots/shared-references.png)
+
+The same shared-references signal is also visible in the global graph view:
+
+![Global graph view of the vault. **Green** nodes are papers you have already imported into Obsidian (notes in `1 Literature/`); **grey** nodes are referenced papers you have not yet imported or read. The size of each grey node scales with how many of your imported papers cite it — bigger grey dots are stronger candidates for the next paper to read.](assets/screenshots/shared-references-graph.png)
 
 ### Glossary
 
