@@ -1,7 +1,7 @@
 ---
 title: Templater commands
 parent: Using
-nav_order: 2
+nav_order: 3
 ---
 
 # Templater commands
