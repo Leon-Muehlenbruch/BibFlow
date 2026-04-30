@@ -18,7 +18,7 @@ Fetch References for the current paper
 Refresh All Literature
 Refresh Paper Metrics
 ─── Search ───
-Paper Search
+Paper Search  (experimental)
 ```
 
 ## Per-paper actions
@@ -40,6 +40,8 @@ Paper Search
 | Command      | Effect                                                                                              |
 |--------------|-----------------------------------------------------------------------------------------------------|
 | Paper Search | runs `0/fetch_search.py` against queries in `0/Paper Search.md`; writes ranked results into the note |
+
+> **Experimental.** Paper Search is under active development and not yet thoroughly tested. The OpenAlex query layer, result format, and section markers may change without warning. Expect rough edges; report bugs by opening an issue on the [BibFlow repo](https://github.com/Leon-Muehlenbruch/BibFlow).
 
 ## Adding a new command
 
