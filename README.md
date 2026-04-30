@@ -1,7 +1,15 @@
 # docs branch
 
-This branch hosts the GitHub Pages site for **Research-Setup**.
+This branch hosts the **BibFlow** GitHub Pages site (built with Jekyll + Just-the-Docs).
 
-The actual Obsidian vault scaffolding lives on the `main` branch.
+The Obsidian vault scaffolding lives on the `main` branch.
 
-GitHub Pages is configured to build from `docs/` on this branch.
+To preview locally:
+
+```bash
+gem install bundler
+bundle install
+bundle exec jekyll serve
+```
+
+Pages should be configured to build from this branch (`docs`), root path.

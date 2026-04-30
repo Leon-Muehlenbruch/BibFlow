@@ -1,0 +1,281 @@
+{
+  "main": {
+    "id": "4bdd744da2162190",
+    "type": "split",
+    "children": [
+      {
+        "id": "949f5160762ff25b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70292938599551ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0/Literature Index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Literature Index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "076a98e3616b3fd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "316ddcaf408c7f67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3514b7ef9c62331f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "010ced47718028ba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Suchen"
+            }
+          },
+          {
+            "id": "0baf2e076e26ed7b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Lesezeichen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bf261c4b91767c74",
+    "type": "split",
+    "children": [
+      {
+        "id": "3043ad431f97b335",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95a6ccee3689e3ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "850c20026c8584df",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2bd4cfbe88a94e9c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1 Literature/erdmann2023influencing.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of erdmann2023influencing"
+            }
+          },
+          {
+            "id": "2d474dbca4d64d41",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_nodes"
+            }
+          },
+          {
+            "id": "4ec292baa22b9577",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_style"
+            }
+          },
+          {
+            "id": "931499b9aee6b20e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "0/Paper Metrics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Paper Metrics"
+            }
+          },
+          {
+            "id": "550df56cda861f1d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "0/Paper Metrics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Paper Metrics"
+            }
+          },
+          {
+            "id": "a3493b3304090456",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          },
+          {
+            "id": "2e90ec782e831424",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "4b03463edd02eb14",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
+      "templater-obsidian:Templater": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "juggl:Juggl global graph": false,
+      "cmdr:Templater: Insert Launcher": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "3514b7ef9c62331f",
+  "lastOpenFiles": [
+    "1 Literature/erdmann2023influencing.md",
+    "1 Literature/zhang2023microbialinduced.md",
+    "1 Literature/zeitouny2023impact.md",
+    "1 Literature/liu2023microbialinduced.md",
+    "1 Literature",
+    "0/Glossary.md",
+    "9 Orga/Templater/Launcher.md.bak",
+    "9 Orga/Templater/Show Git Status.md",
+    "9 Orga/Templater/Commit and Sync Now.md",
+    "9 Orga/Templater/Toggle Auto Sync.md",
+    "0/Aufgabenstellung.md",
+    "0/Paper Search.md",
+    "0/Paper Metrics.md",
+    "Untitled.md",
+    "9 Orga/Templater/Launcher.md",
+    "9 Orga/Templater/Import from Zotero.md",
+    "9 Orga/Templater/Paper Search.md",
+    "0/fetch_search.py",
+    "cheng2018soil.md",
+    "0/Shared References.md",
+    "2 Wiki/Concept Notes/Urease.md",
+    "2 Wiki/Concept Notes/MICP.md",
+    "9 Orga/Templates/Concept Note.md",
+    "citekey.md",
+    "0/Literature Index.md",
+    "Untitled.canvas",
+    "cheng2012situ.md",
+    "cheng2013cementation.md",
+    "9 Orga/Templater/Fetch References.md",
+    "0/fetch_references.py",
+    "0/fetch_metrics.py",
+    "2 Wiki/Untitled.base",
+    "0",
+    "9 Orga/Templater",
+    "3 Writing",
+    "7 Experiment Notes"
+  ]
+}
