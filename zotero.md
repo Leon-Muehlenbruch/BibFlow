@@ -27,7 +27,7 @@ Generates stable citekeys and auto-exports a `.bib` file.
 1. In Zotero, right-click your master collection → Export Collection.
 2. Format: **Better BibLaTeX** (or BibTeX if Word).
 3. Tick **Keep updated**.
-4. Save as `~/Documents/Masterarbeit/06_Thesis/references.bib`.
+4. Save it next to your thesis document. If you used the suggested project folder from [Prerequisites](prerequisites), that means `~/Documents/Masterarbeit/06_Thesis/references.bib`. Otherwise pick any path; just remember it — Word/LaTeX needs to point at this file.
 
 The file rewrites itself every time you change Zotero.
 

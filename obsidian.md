@@ -38,3 +38,9 @@ Settings → Community plugins. These ship with the vault and should already be 
 - Juggl (optional, for inline graph view)
 
 If any are missing or disabled, enable them.
+
+## Enable the custom CSS snippet
+
+Settings → Appearance → CSS snippets. Toggle on **zotero-highlights** (ships at `.obsidian/snippets/zotero-highlights.css`).
+
+Without this, your imported Zotero highlights still render — just in a flat browser-default colour rather than matching the Zotero palette.

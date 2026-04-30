@@ -16,7 +16,7 @@ LaTeX users: skip this and ignore Word references throughout.
 
 ## A project folder
 
-Create one top-level folder for everything related to your thesis:
+You will need somewhere on disk to keep the vault. The layout below is one suggestion — not required by anything in BibFlow. The vault works equally well sitting on its own anywhere; this structure just keeps research, drafts, and figures alongside the notes.
 
 ```
 ~/Documents/Masterarbeit/
@@ -30,7 +30,7 @@ Create one top-level folder for everything related to your thesis:
 └── 07_Presentation/
 ```
 
-Numbered prefixes hold the order in Finder.
+Numbered prefixes hold the order in Finder. Substitute your own structure if you prefer.
 
 ## A GitHub account
 

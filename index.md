@@ -28,7 +28,7 @@ You read in Zotero, take notes in Obsidian, write in Word. BibFlow is the glue: 
 
 ## Who this is for
 
-Master or PhD students reading 20+ papers who want to stop retyping citations, stop losing notes, and find ideas they read months ago.
+Single-author academic writing — bachelor, master, or PhD theses; dissertations; journal articles. The kind of work where you read 20+ papers and want to stop retyping citations, stop losing notes, and find ideas you read months ago.
 
 Not for: 5-source term papers, real-time collaborative editing.
 
