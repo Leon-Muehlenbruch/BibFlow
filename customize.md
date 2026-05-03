@@ -21,13 +21,13 @@ LaTeX: edit `style=authoryear` in `thesis.cls`.
 
 ## Vault folder names
 
-Only `0/`, `1 Literature/`, `2 Wiki/`, and `9 Orga/` are referenced by templates and scripts. The rest are free.
+Only `0 Meta/`, `1 Literature/`, `2 Wiki/`, and `9 Orga/` are referenced by templates and scripts. The rest are free.
 
 If you rename `1 Literature/`, update the constant at the top of:
 
-- `0/fetch_metrics.py`
-- `0/fetch_references.py`
-- `0/fetch_search.py`
+- `0 Meta/Library/fetch_metrics.py`
+- `0 Meta/Library/fetch_references.py`
+- `0 Meta/Library/fetch_search.py`
 
 ```python
 LIT_DIR = VAULT_ROOT / "1 Literature"
@@ -38,7 +38,7 @@ LIT_DIR = VAULT_ROOT / "1 Literature"
 Run the inspector against your institutes Word template:
 
 ```bash
-python3 0/inspect_docx.py /path/to/Thesis_Template.docx
+python3 0 Meta/Library/inspect_docx.py /path/to/Thesis_Template.docx
 ```
 
 It prints page geometry, fonts, heading hierarchy, colours, numbering — everything needed to write a matching `thesis.cls`.

@@ -12,7 +12,8 @@ The BibFlow vault has a fixed structure. Each folder has one role; the numeric p
 
 | Folder                       | Holds                                                       |
 |------------------------------|-------------------------------------------------------------|
-| `0/`                         | control notes and Python scripts                            |
+| `0 Meta/Library/`            | dashboards over your library + Python helpers (auto-refreshed) |
+| `0 Meta/Planning/`           | hand-edited project material (Roadmap, supervisor brief)    |
 | `1 Literature/`              | one note per paper, named by its citekey                    |
 | `2 Wiki/Concept Notes/`      | atomic ideas linked from many papers                        |
 | `2 Wiki/Method Notes/`       | protocols, procedures, recipes                              |
@@ -42,7 +43,7 @@ Each literature note also embeds its own local graph inline (Juggl block at the 
 | Cmd+P          | command palette (any Obsidian or plugin command)           |
 | Option+T       | the BibFlow Launcher (Templater commands)                  |
 
-## Control notes (the `0/` folder)
+## Control notes (the `0 Meta/` folder)
 
 These are dashboards, not content. They auto-populate from your literature notes — open them for a birds-eye view of your library.
 

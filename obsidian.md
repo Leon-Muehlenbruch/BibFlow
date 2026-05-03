@@ -25,7 +25,7 @@ A fresh copy of the BibFlow scaffolding lands at `02_Notes/`.
 
 Obsidian → Open vault → Open folder as vault → pick `02_Notes/`.
 
-The folder pane shows `0/`, `1 Literature/`, `2 Wiki/`, `9 Orga/`, etc., pre-populated with templates and scripts.
+The folder pane shows `0 Meta/`, `1 Literature/`, `2 Wiki/`, `9 Orga/`, etc., pre-populated with templates and scripts.
 
 ## Verify community plugins are enabled
 

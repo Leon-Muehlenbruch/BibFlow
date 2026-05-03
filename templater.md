@@ -35,13 +35,13 @@ Paper Search  (experimental)
 | Command               | Effect                                                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------|
 | Refresh All Literature| re-imports every paper in `1 Literature/` from Zotero                                        |
-| Refresh Paper Metrics | re-runs `0/fetch_metrics.py`; rewrites `0/Paper Metrics.md` with current OpenAlex citations  |
+| Refresh Paper Metrics | re-runs `0 Meta/Library/fetch_metrics.py`; rewrites `0 Meta/Library/Paper Metrics.md` with current OpenAlex citations  |
 
 ## Search
 
 | Command      | Effect                                                                                              |
 |--------------|-----------------------------------------------------------------------------------------------------|
-| Paper Search | runs `0/fetch_search.py` against queries in `0/Paper Search.md`; writes ranked results into the note |
+| Paper Search | runs `0 Meta/Library/fetch_search.py` against queries in `0 Meta/Library/Paper Search.md`; writes ranked results into the note |
 
 > **Experimental.** Paper Search is under active development and not yet thoroughly tested. The OpenAlex query layer, result format, and section markers may change without warning. Expect rough edges; report bugs by opening an issue on the [BibFlow repo](https://github.com/Leon-Muehlenbruch/BibFlow).
 
