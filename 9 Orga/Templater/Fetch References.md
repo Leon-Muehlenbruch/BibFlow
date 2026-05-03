@@ -11,10 +11,10 @@
 //   • Or bind a hotkey via Templater settings → Template Hotkeys
 //
 // Requires: python3 on $PATH (or at one of the fallback paths below).
-// Script lives at 0/fetch_references.py.
+// Script lives at 0 Meta/Library/fetch_references.py.
 // --------------------------------------------------------------------
 
-const SCRIPT_PATH = "/Users/leon/Master Thesis/0/fetch_references.py";
+const SCRIPT_PATH = `${app.vault.adapter.basePath}/0 Meta/Library/fetch_references.py`;
 const LIT_FOLDER  = "1 Literature/";
 
 const PYTHON_CANDIDATES = [

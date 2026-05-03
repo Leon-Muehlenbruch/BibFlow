@@ -38,8 +38,8 @@ from datetime import date
 from pathlib import Path
 
 # --- paths (resolved relative to this script) --------------------------------
-SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0
-VAULT_ROOT = SCRIPT_DIR.parent                     # <vault>
+SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0 Meta/Library
+VAULT_ROOT = SCRIPT_DIR.parent.parent                     # <vault>
 LIT_DIR    = VAULT_ROOT / "1 Literature"
 
 CONTACT = "leonmuehlenbruch@gmail.com"             # OpenAlex polite pool

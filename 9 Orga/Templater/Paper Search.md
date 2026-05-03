@@ -1,7 +1,7 @@
 <%*
 // --------------------------------------------------------------------
-// Run 0/fetch_search.py — refreshes every `%% results-begin: ... %%`
-// block in 0/Paper Search.md based on the `\`\`\`search` fences above
+// Run 0 Meta/Library/fetch_search.py — refreshes every `%% results-begin: ... %%`
+// block in 0 Meta/Library/Paper Search.md based on the `\`\`\`search` fences above
 // them. After the script finishes, opens the search note in the active
 // pane.
 //
@@ -11,11 +11,11 @@
 //   • Or bind a hotkey via Templater settings → Template Hotkeys.
 //
 // Requires: python3 on $PATH (or at one of the fallback paths below).
-// Script lives at 0/fetch_search.py.
+// Script lives at 0 Meta/Library/fetch_search.py.
 // --------------------------------------------------------------------
 
-const SCRIPT_PATH = "/Users/leon/Master Thesis/0/fetch_search.py";
-const NOTE_PATH   = "0/Paper Search.md";
+const SCRIPT_PATH = `${app.vault.adapter.basePath}/0 Meta/Library/fetch_search.py`;
+const NOTE_PATH   = "0 Meta/Library/Paper Search.md";
 
 const PYTHON_CANDIDATES = [
   "/opt/homebrew/bin/python3",   // Apple Silicon Homebrew

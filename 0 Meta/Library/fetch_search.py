@@ -34,8 +34,8 @@ from datetime import date
 from pathlib import Path
 
 # --- paths -----------------------------------------------------------------
-SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0
-VAULT_ROOT = SCRIPT_DIR.parent                     # <vault>
+SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0 Meta/Library
+VAULT_ROOT = SCRIPT_DIR.parent.parent                     # <vault>
 LIT_DIR    = VAULT_ROOT / "1 Literature"
 NOTE_PATH  = SCRIPT_DIR / "Paper Search.md"
 

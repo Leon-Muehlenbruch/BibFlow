@@ -1,6 +1,6 @@
 <%*
 // --------------------------------------------------------------------
-// Refresh "0/Paper Metrics.md" by running the fetch_metrics.py script,
+// Refresh "0 Meta/Library/Paper Metrics.md" by running the fetch_metrics.py script,
 // which queries OpenAlex + Semantic Scholar for each paper in
 // "1 Literature/" and writes a sortable markdown table.
 //
@@ -10,11 +10,11 @@
 //   • Or bind a hotkey via Templater settings → Template Hotkeys
 //
 // Requires: python3 available on $PATH (or at one of the fallback
-// paths below). Script lives at 0/fetch_metrics.py.
+// paths below). Script lives at 0 Meta/Library/fetch_metrics.py.
 // --------------------------------------------------------------------
 
-const SCRIPT_PATH = "/Users/leon/Master Thesis/0/fetch_metrics.py";
-const RESULT_PATH = "0/Paper Metrics.md";
+const SCRIPT_PATH = `${app.vault.adapter.basePath}/0 Meta/Library/fetch_metrics.py`;
+const RESULT_PATH = "0 Meta/Library/Paper Metrics.md";
 
 // Obsidian launched from the Dock/Spotlight often has a minimal $PATH
 // that misses Homebrew and /usr/local/bin. Try a few common python3

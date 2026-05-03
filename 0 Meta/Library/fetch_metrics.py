@@ -17,8 +17,8 @@ from pathlib import Path
 # Paths are resolved relative to this script's location so the script keeps
 # working if the vault moves. Script is expected to live at
 # <vault>/0/fetch_metrics.py; adjust VAULT_ROOT if you move it elsewhere.
-SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0
-VAULT_ROOT = SCRIPT_DIR.parent                     # <vault>
+SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0 Meta/Library
+VAULT_ROOT = SCRIPT_DIR.parent.parent                     # <vault>
 LIT_DIR  = VAULT_ROOT / "1 Literature"
 OUT_PATH = SCRIPT_DIR / "Paper Metrics.md"
 CONTACT = "leonmuehlenbruch@gmail.com"  # polite-pool for OpenAlex
