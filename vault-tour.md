@@ -46,6 +46,12 @@ Each literature note also embeds its own local graph inline (Juggl block at the 
 
 These are dashboards, not content. They auto-populate from your literature notes — open them for a birds-eye view of your library.
 
+### Roadmap
+
+Mermaid Gantt chart of your thesis timeline plus a milestone checklist. Built from a single fenced `gantt` code block — no plugin needed; Obsidian renders Mermaid natively. Edit start dates and durations as the project shifts; chained tasks (`after <id>`) recalculate automatically.
+
+Best treated as a high-level navigator. For week-by-week task tracking, layer the [Tasks plugin](https://obsidian-tasks-group.github.io/obsidian-tasks/) on top.
+
 ### Literature Index
 
 Dataview-rendered list of every note in `1 Literature/` with year, journal, and intext citation. Answers "what have I read on X" without grep.
