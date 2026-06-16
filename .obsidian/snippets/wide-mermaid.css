@@ -1,0 +1,29 @@
+/* Make every Mermaid diagram span the full content area, even when
+ * "Readable line length" is on for prose. Keeps regular text narrow
+ * while diagrams (Gantt, flowchart, sequence) get the room they need.
+ *
+ * Enable in Settings → Appearance → CSS snippets → "wide-mermaid".
+ */
+.markdown-preview-view .mermaid,
+.markdown-source-view .mermaid,
+.markdown-rendered .mermaid {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto;
+}
+
+.markdown-preview-view .mermaid svg,
+.markdown-source-view .mermaid svg,
+.markdown-rendered .mermaid svg {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Optional: lift the diagram out of the readable-line-length column
+ * by undoing the column on the Mermaid wrapper specifically. */
+.markdown-preview-sizer > .mermaid,
+.cm-line .mermaid {
+  margin-left: calc((var(--file-line-width) - 100%) / 2);
+}
