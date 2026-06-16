@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# BibFlow mass-deletion guard.
+#
+# Blocks any commit that removes THRESHOLD or more files at once — the
+# classic silent-loss scenario where a folder move drops files mid-flight
+# and Obsidian Git's auto-backup commits the deletions before you notice.
+#
+# This hook is versioned in the repo (git does NOT copy hooks on clone),
+# so activate it once per machine:
+#
+#     git config core.hooksPath .githooks
+#
+# Bypass it deliberately for a genuine large deletion:
+#
+#     git commit --no-verify -m "<reason>"
+#
+THRESHOLD=10
+
+# Count files staged for deletion in this commit.
+deleted=$(git diff --cached --name-only --diff-filter=D | wc -l | tr -d '[:space:]')
+deleted=${deleted:-0}
+
+if [ "$deleted" -ge "$THRESHOLD" ]; then
+  echo "✋ BibFlow guard: this commit deletes $deleted files (threshold $THRESHOLD)." >&2
+  echo "   If that is intentional, re-run with:  git commit --no-verify" >&2
+  exit 1
+fi
+
+exit 0

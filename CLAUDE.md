@@ -49,6 +49,10 @@ Single-maintainer vault: commit **directly to the default branch** (`main`);
 the documentation site lives on the separate `docs` branch. Commit when the
 user asks. (Adjust this if you adopt a branch/PR flow.)
 
+A pre-commit guard (`.githooks/pre-commit`) blocks any commit deleting 10+
+files — activate per clone with `git config core.hooksPath .githooks`. For a
+deliberate large deletion, use `git commit --no-verify`.
+
 ## Continuity across sessions
 
 A fresh chat has no memory of the last one. To resume where the previous

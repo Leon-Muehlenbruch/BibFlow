@@ -145,9 +145,16 @@ Then, in Obsidian, the **Obsidian Git** plugin auto-commits on the interval
 configured in its settings (Settings → Obsidian Git). Confirm with the user
 that auto-backup is on.
 
-> Note: BibFlow's optional mass-deletion pre-commit guard lives in
-> `.git/hooks/` and is **not** copied by `git clone`. If the user wants it,
-> add it by hand later — it is not required for the vault to work.
+Optionally activate the **mass-deletion guard** — a pre-commit hook that
+blocks any commit removing 10+ files at once (a folder move gone wrong, then
+auto-backed-up). It ships in `.githooks/`, but git does not copy hooks on
+clone, so point git at it:
+
+```bash
+git -C "VAULT_PATH" config core.hooksPath .githooks
+```
+
+Bypass a genuine large deletion with `git commit --no-verify`.
 
 ---
 
