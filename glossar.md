@@ -18,3 +18,7 @@ nav_order: 99
 | **OpenAlex**              | free bibliographic database; used by Paper Search and Paper Metrics           |
 | **FWCI**                  | Field-Weighted Citation Impact; normalised citation count                     |
 | **persist block**         | template syntax that survives Zotero re-imports                               |
+| **reading status**        | a `#paper/<state>` tag (`to-read`, `skimmed`, `referenced`, `fully-read`) on a note; drives the Reading Queue |
+| **alias**                 | alternative name in a note's frontmatter; lets `[[Author Year]]` wikilinks resolve to its citekey note |
+| **user script (`tp.user`)** | a JavaScript helper in `9 Orga/Templater Scripts/` that Templater exposes as `tp.user.<name>` |
+| **pypdf**                 | Python library that reads a PDF's bookmark outline; powers Refresh TOC        |

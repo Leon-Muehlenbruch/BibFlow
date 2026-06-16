@@ -17,10 +17,10 @@ The BibFlow vault has a fixed structure. Each folder has one role; the numeric p
 | `1 Literature/`              | one note per paper, named by its citekey                    |
 | `2 Wiki/Concept Notes/`      | atomic ideas linked from many papers                        |
 | `2 Wiki/Method Notes/`       | protocols, procedures, recipes                              |
-| `3 Writing/`                 | drafts and exported chapters                                |
+| `3 Writing/`                 | drafts and exported chapters (start sections from the Draft Section Block template) |
 | `7 Experiment Notes/`        | lab or empirical work (rename if not relevant)              |
 | `8 Meeting Notes/`           | supervisor and reading-group notes                          |
-| `9 Orga/`                    | templates and Templater commands — never edited by hand     |
+| `9 Orga/`                    | templates, Templater commands, and `tp.user` helper scripts — never edited by hand |
 
 ## Navigating with wikilinks
 
@@ -32,7 +32,7 @@ The right sidebars graph icon opens the **local graph** for the active note: whi
 
 The left ribbons graph icon opens the **global graph view** for the whole vault.
 
-Each literature note also embeds its own local graph inline (Juggl block at the bottom), populated by `fetch_references.py`.
+Each literature note ends with a `## Cited works` list of the papers it references, populated by **Fetch References** (`fetch_references.py`). Every entry is a wikilink, so the note's local graph and Backlinks pane fill in automatically — and references shared across several papers surface in [Shared References](#shared-references).
 
 ## Search
 
@@ -58,6 +58,10 @@ Best treated as a high-level navigator. For week-by-week task tracking, layer th
 Dataview-rendered list of every note in `1 Literature/` with year, journal, and intext citation. Answers "what have I read on X" without grep.
 
 ![Literature Index — a Dataview table of all paper notes, sortable by year.](assets/screenshots/literature-index.png)
+
+### Reading Queue
+
+The same library, grouped by **reading status** instead of by name. Every paper in `1 Literature/` lands in one of `to-read`, `skimmed`, `referenced`, or `fully-read` — plus an **Unset** bucket so newly imported papers never slip through. Set a paper's status with **Set Reading Status** (Launcher); the board re-counts on its own. A live answer to "what's left to read?".
 
 ### Paper Metrics
 

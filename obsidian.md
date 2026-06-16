@@ -44,3 +44,15 @@ If any are missing or disabled, enable them.
 Settings → Appearance → CSS snippets. Toggle on **zotero-highlights** (ships at `.obsidian/snippets/zotero-highlights.css`).
 
 Without this, your imported Zotero highlights still render — just in a flat browser-default colour rather than matching the Zotero palette.
+
+## Optional: PDF TOC extraction
+
+Most commands work immediately. One — **Refresh TOC**, which reads a PDF's bookmark outline into the note — needs a small Python dependency (`pypdf`). Templater's *User script files* folder is already pointed at `9 Orga/Templater Scripts/`, so all you add is a self-contained venv. From the vault root in Terminal:
+
+```bash
+cd "9 Orga/Templater Scripts"
+python3 -m venv .venv
+.venv/bin/pip install pypdf
+```
+
+The helper auto-detects this venv and falls back to a system `python3` if it is missing. The `.venv/` is git-ignored, so set it up once per machine. Full notes live in `9 Orga/Templater Scripts/README.md`. Skip this if you do not use the TOC feature — everything else still works.

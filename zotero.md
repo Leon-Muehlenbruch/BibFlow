@@ -54,9 +54,10 @@ Obsidian → Settings → Zotero Integration:
 
 In Zoteros PDF reader, the highlighter has 8 colours. BibFlow assigns:
 
-| Colour | Meaning              |
-|--------|----------------------|
-| Yellow | General highlight    |
-| Green  | Key term to remember |
+| Colour | Meaning                 |
+|--------|-------------------------|
+| Yellow | General highlight       |
+| Green  | Key term to remember    |
+| Blue   | Figure / table / media  |
 
-Yellows land under "General" in the imported note, greens under "Key terms". Other colours are styled but unused by default — see [Customisation](customize) to add them.
+Yellows land under "General" in the imported note, greens under "Key terms", blues under "Media". The remaining colours are styled but unused by default — see [Customisation](customize) to add them.
