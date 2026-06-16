@@ -38,7 +38,6 @@ Run from the vault root (or via the Obsidian **Launcher**, Option+T):
 
 - `python3 "0 Meta/Library/fetch_metrics.py"` — rebuild `Paper Metrics.md`.
 - `python3 "0 Meta/Library/fetch_references.py <citekey>"` — write `## Cited works` for one paper.
-- `python3 "0 Meta/Library/fetch_search.py"` — refresh `Paper Search.md` results.
 - PDF-TOC extraction needs `pypdf` in `9 Orga/Templater Scripts/.venv` (see that folder's `README.md`).
 
 Before committing changes to a helper, sanity-check it: `python3 -m py_compile <file>`.

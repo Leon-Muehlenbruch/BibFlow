@@ -196,7 +196,7 @@ the user still needs to do (Step 7), and where the vault lives.
 - **`origin` points upstream** until Step 6 — do not push to it.
 - **Privacy**: keep the backup repo private; literature notes embed
   copyrighted abstracts.
-- **Demo content**: `Paper Search.md` and `Paper Metrics.md` ship with example
-  results. Clear them whenever the user wants a blank slate.
+- **Demo content**: `Paper Metrics.md` ships with example results. Clear it
+  whenever the user wants a blank slate.
 - **`CLAUDE.md`** in the vault root tells you (the agent) how the vault works
   for ongoing use — read it once the install is done.

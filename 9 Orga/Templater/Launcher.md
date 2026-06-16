@@ -26,9 +26,6 @@ const items = [
   { kind: "template", label: "Refresh All Literature",                 path: "9 Orga/Templater/Refresh All Literature.md" },
   { kind: "template", label: "Refresh Paper Metrics",                  path: "9 Orga/Templater/Refresh Paper Metrics.md" },
 
-  { kind: "sep",      label: "─── Search ───" },
-  { kind: "template", label: "Paper Search",                           path: "9 Orga/Templater/Paper Search.md" },
-
   { kind: "sep",      label: "─── Git ───" },
   { kind: "template", label: "Commit and Sync Now",                    path: "9 Orga/Templater/Commit and Sync Now.md" },
   { kind: "template", label: "Show Git Status",                        path: "9 Orga/Templater/Show Git Status.md" },
