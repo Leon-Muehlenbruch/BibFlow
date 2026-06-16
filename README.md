@@ -12,6 +12,14 @@ git clone https://github.com/Leon-Muehlenbruch/BibFlow.git my-vault
 
 Open `my-vault/` as a vault in Obsidian, then follow the setup guide in the docs.
 
+## Install with an AI agent
+
+Have an AI assistant set it up for you. Point Claude Code (or the Claude
+desktop app with Desktop Commander) at [`AGENT-INSTALL.md`](AGENT-INSTALL.md)
+and say *"install BibFlow as a new Obsidian vault on my machine"* — it is a
+runbook the agent follows to install prerequisites, clone, wire up the Python
+helpers, and open the vault. See [Working with Claude](https://leon-muehlenbruch.github.io/BibFlow/claude) in the docs.
+
 ## Documentation
 
 Full setup walkthrough, daily workflow, and command reference:
