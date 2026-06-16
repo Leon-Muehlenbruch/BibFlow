@@ -45,3 +45,17 @@ xcode-select --install
 ```
 
 If it says "already installed", you are done. Otherwise accept the install dialog.
+
+## Python 3
+
+The library helpers — paper metrics, reference extraction, keyword search — run on Python 3. Check with:
+
+```bash
+python3 --version
+```
+
+Most Macs already have one (the Xcode tools above include it). If it is missing, install via [Homebrew](https://brew.sh): `brew install python`. The metrics / references / search helpers use only the standard library; the optional PDF-TOC feature additionally needs `pypdf` (see [Obsidian setup](obsidian#optional-pdf-toc-extraction)).
+
+## Optional: an AI assistant
+
+BibFlow is built to pair with an AI coding assistant such as [Claude Code](https://claude.com/claude-code) — to run the helpers, import and synthesise papers, and commit to GitHub for you. None of it is required, but if you want the assist it helps to have a Claude plan (Pro or Max) or Anthropic API key, [Node.js](https://nodejs.org), and the [GitHub CLI](https://cli.github.com). The full setup — including the `CLAUDE.md` project file, permissions, and how the assistant continues across sessions — is on its own page: [Working with Claude](claude).
