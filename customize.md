@@ -15,7 +15,7 @@ Yellow → General, Green → Key terms, and Blue → Media are mapped out of th
 ## Citation style
 
 Word: Zotero toolbar → Document Preferences → Style.
-LaTeX: edit `style=authoryear` in `thesis.cls`.
+LaTeX: set `style=authoryear` in your biblatex setup (`\usepackage[style=authoryear]{biblatex}`).
 
 ## Vault folder names
 
