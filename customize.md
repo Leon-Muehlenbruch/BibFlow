@@ -25,7 +25,6 @@ If you rename `1 Literature/`, update the constant at the top of:
 
 - `0 Meta/Library/fetch_metrics.py`
 - `0 Meta/Library/fetch_references.py`
-- `0 Meta/Library/fetch_search.py`
 
 ```python
 LIT_DIR = VAULT_ROOT / "1 Literature"

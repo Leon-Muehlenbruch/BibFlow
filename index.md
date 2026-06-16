@@ -22,7 +22,7 @@ You read in Zotero, take notes in Obsidian, write in Word. BibFlow is the glue: 
 
 - A pre-configured Obsidian vault: templates, scripts, plugin defaults.
 - A literature note format that survives Zotero re-imports.
-- Python helpers for keyword search, paper metrics, reference extraction, and PDF tables of contents.
+- Python helpers for paper metrics, reference extraction, and PDF tables of contents.
 - Reading-status tracking, in-text citation linking, and a draft scaffold for writing.
 - A Templater launcher: one hotkey for every action.
 - Auto-backup with a mass-deletion guard.

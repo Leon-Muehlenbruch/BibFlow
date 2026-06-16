@@ -48,7 +48,7 @@ If it says "already installed", you are done. Otherwise accept the install dialo
 
 ## Python 3
 
-The library helpers — paper metrics, reference extraction, keyword search — run on Python 3. Check with:
+The library helpers — paper metrics, reference extraction, PDF conversion — run on Python 3. Check with:
 
 ```bash
 python3 --version

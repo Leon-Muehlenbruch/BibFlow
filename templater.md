@@ -21,8 +21,6 @@ Promote selection to concept note
 
 Refresh All Literature
 Refresh Paper Metrics
-─── Search ───
-Paper Search  (experimental)
 ─── Git ───
 Commit and Sync Now
 Show Git Status
@@ -45,14 +43,6 @@ Show Git Status
 |-----------------------|----------------------------------------------------------------------------------------------|
 | Refresh All Literature| re-imports every paper in `1 Literature/` from Zotero, then runs the full post-import chain on each note: repair the status and abstract blocks, re-extract the TOC, regroup highlights by chapter, and re-link in-text citations. Your synthesis blocks are untouched. |
 | Refresh Paper Metrics | re-runs `0 Meta/Library/fetch_metrics.py`; rewrites `0 Meta/Library/Paper Metrics.md` with current OpenAlex citations  |
-
-## Search
-
-| Command      | Effect                                                                                              |
-|--------------|-----------------------------------------------------------------------------------------------------|
-| Paper Search | runs `0 Meta/Library/fetch_search.py` against queries in `0 Meta/Library/Paper Search.md`; writes ranked results into the note |
-
-> **Experimental.** Paper Search is under active development and not yet thoroughly tested. The OpenAlex query layer, result format, and section markers may change without warning. Expect rough edges; report bugs by opening an issue on the [BibFlow repo](https://github.com/Leon-Muehlenbruch/BibFlow).
 
 ## Helper scripts (`tp.user.*`)
 

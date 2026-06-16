@@ -88,7 +88,3 @@ Dataview-rendered list of all concept notes in `2 Wiki/Concept Notes/`, showing 
 Each row in the Glossary table is sourced from one concept note in `2 Wiki/Concept Notes/`. A concept note looks like this:
 
 ![A concept note in `2 Wiki/Concept Notes/`. The frontmatter holds the term + definition that the Glossary pulls; the body is yours, with backlinks to the literature notes that mention this concept.](assets/screenshots/concept-note-example.png)
-
-### Paper Search *(experimental)*
-
-OpenAlex-backed keyword search. Define keyword and filter blocks in this notes `## Section` headers; run Launcher → **Paper Search**; ranked results land between auto-generated markers under each section. See [Templater commands](templater) for caveats and limitations.

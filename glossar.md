@@ -15,7 +15,7 @@ nav_order: 99
 | **Templater**             | Obsidian plugin: runnable templates (action commands)                         |
 | **Dataview**              | Obsidian plugin: SQL-like queries over notes                                  |
 | **Obsidian Git**          | Obsidian plugin: auto-commit and push the vault                               |
-| **OpenAlex**              | free bibliographic database; used by Paper Search and Paper Metrics           |
+| **OpenAlex**              | free bibliographic database; used by Paper Metrics and reference extraction   |
 | **FWCI**                  | Field-Weighted Citation Impact; normalised citation count                     |
 | **persist block**         | template syntax that survives Zotero re-imports                               |
 | **reading status**        | a `#paper/<state>` tag (`to-read`, `skimmed`, `referenced`, `fully-read`) on a note; drives the Reading Queue |
