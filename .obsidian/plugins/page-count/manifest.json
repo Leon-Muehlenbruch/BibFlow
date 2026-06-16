@@ -1,0 +1,9 @@
+{
+  "id": "page-count",
+  "name": "Page Count (Wörter → Word-Seiten)",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Zeigt die geschätzte Word-Seitenzahl der aktiven Notiz in der Statusleiste an.",
+  "author": "Leon",
+  "isDesktopOnly": false
+}

@@ -10,6 +10,12 @@
       "icon": "templater-icon",
       "name": "Templater: Insert Launcher",
       "mode": "any"
+    },
+    {
+      "id": "insert-template",
+      "icon": "lucide-file-plus",
+      "name": "Insert Template",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

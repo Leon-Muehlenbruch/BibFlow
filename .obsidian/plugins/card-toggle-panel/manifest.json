@@ -1,0 +1,9 @@
+{
+  "id": "card-toggle-panel",
+  "name": "Card Toggle Panel",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Sidebar panel listing every card in the active Canvas with individual toggle checkboxes to hide/show cards and their edges.",
+  "author": "Leon",
+  "isDesktopOnly": false
+}

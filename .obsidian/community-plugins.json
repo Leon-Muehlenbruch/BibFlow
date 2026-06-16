@@ -5,7 +5,9 @@
   "obsidian-hider",
   "mode-switcher",
   "obsidian-shellcommands",
-  "juggl",
   "cmdr",
-  "obsidian-git"
+  "obsidian-git",
+  "page-count",
+  "card-toggle-panel",
+  "ribbon-cleaner"
 ]

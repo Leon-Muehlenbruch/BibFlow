@@ -1,0 +1,9 @@
+{
+  "id": "ribbon-cleaner",
+  "name": "Ribbon Cleaner",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Keeps only an allowlist of left-ribbon icons visible and hides everything else. Allowlist lives in data.json, so a curated ribbon is reproducible and shippable across vaults.",
+  "author": "Leon",
+  "isDesktopOnly": false
+}

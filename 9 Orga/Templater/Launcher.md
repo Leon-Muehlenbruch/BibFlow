@@ -29,6 +29,7 @@ const items = [
   { kind: "sep",      label: "─── Git ───" },
   { kind: "template", label: "Commit and Sync Now",                    path: "9 Orga/Templater/Commit and Sync Now.md" },
   { kind: "template", label: "Show Git Status",                        path: "9 Orga/Templater/Show Git Status.md" },
+  { kind: "template", label: "Commit override (bypass deletion guard, --no-verify)", path: "9 Orga/Templater/Commit (Override no-verify).md" },
 ];
 
 // --- show the picker ------------------------------------------------------

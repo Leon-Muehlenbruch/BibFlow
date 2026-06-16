@@ -1,4 +1,13 @@
 {
+  "app:reload": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "workspace:new-tab": [],
   "obsidian-zotero-desktop-connector:show-zotero-debug-view": [
     {
       "modifiers": [
@@ -57,6 +66,12 @@
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "T"
+    },
+    {
+      "modifiers": [
+        "Mod"
       ],
       "key": "T"
     }
