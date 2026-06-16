@@ -13,3 +13,8 @@
 
 # Trash folder
 .trash/
+
+# Python venv for the Templater Scripts helpers (set up once per machine,
+# see "9 Orga/Templater Scripts/README.md"). Machine-specific — never commit.
+9 Orga/Templater Scripts/.venv/
+**/__pycache__/

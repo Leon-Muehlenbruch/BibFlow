@@ -1,6 +1,6 @@
 # Paper Search
 
-OpenAlex-backed literature discovery. Each `## Section` below is one saved search. Edit the `keywords` / filters inside its ```` ```search ```` fence, then run the **Paper Search** Templater command (or `python3 0/fetch_search.py` from a terminal). Results are written between `%% results-begin: <Section> %%` / `%% results-end: <Section> %%` markers directly under the fence — anything you type between those markers will be overwritten on the next run, so keep your own notes outside them.
+OpenAlex-backed literature discovery. Each `## Section` below is one saved search. Edit the `keywords` / filters inside its ```` ```search ```` fence, then run the **Paper Search** Templater command (or `python3 "0 Meta/Library/fetch_search.py"` from your vault root). Results are written between `%% results-begin: <Section> %%` / `%% results-end: <Section> %%` markers directly under the fence — anything you type between those markers will be overwritten on the next run, so keep your own notes outside them.
 
 Papers already in your `1 Literature/` library are detected by DOI match and marked with `✓`, with a link to the existing note.
 

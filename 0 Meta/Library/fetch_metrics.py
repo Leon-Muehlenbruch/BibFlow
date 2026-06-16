@@ -232,8 +232,9 @@ def main():
     lines += [
         "",
         "## Running the Script",
+        "Run from your vault root (or use the **Refresh Paper Metrics** Templater command):",
         "``````",
-        'python3 "/Users/leon/Master Thesis/0/fetch_metrics.py"',
+        'python3 "0 Meta/Library/fetch_metrics.py"',
         "``````",
     ]
 

@@ -11,8 +11,8 @@ English Name:
 <!-- 2-3 short paragraphs in your own words. Link to other concepts liberally. -->
 
 
-## Why it matters to MICP
-<!-- Why does this concept come up in your thesis? Skip if obvious. -->
+## Why it matters
+<!-- Why does this concept come up in your thesis / project? Skip if obvious. -->
 
 
 ## In the literature

@@ -26,7 +26,7 @@
     {
       "id": "v33yt5dugy",
       "platform_specific_commands": {
-        "default": "python3 \"/Users/leon/Master Thesis/0/fetch_metrics.py\""
+        "default": "python3 \"{{vault_path}}/0 Meta/Library/fetch_metrics.py\""
       },
       "shells": {},
       "alias": "Refresh paper metrics",
