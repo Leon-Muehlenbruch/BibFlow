@@ -13,19 +13,18 @@ Helpers that the Templater plugin loads as `tp.user.<name>` once the
    ships this setting pre-configured in `.obsidian/`, so a fresh clone
    works out of the box — this step is only needed if you re-point it.
 
-2. Install the Python helper's only dependency. Apple's bundled Python
+2. Install the Python helpers' dependencies. Apple's bundled Python
    blocks global pip installs (PEP 668), so use a self-contained venv.
    From your vault root:
    ```bash
    cd "9 Orga/Templater Scripts"
    python3 -m venv .venv
-   .venv/bin/pip install pypdf
+   .venv/bin/pip install pypdf pymupdf4llm
    ```
-   The `.venv/` is git-ignored, so set it up once per machine.
-   `extractPdfToc.js` auto-detects this venv at `.venv/bin/python` and
-   uses it. Falls back to system `python3` if the venv is missing — so
-   if you've already got pypdf installed globally on a different
-   machine, the same script works there too.
+   (`pypdf` powers the TOC helper; `pymupdf4llm` the PDF→Markdown
+   converter.) The `.venv/` is git-ignored, so set it up once per
+   machine. The JS wrappers auto-detect this venv at `.venv/bin/python`
+   and fall back to system `python3` if it is missing.
 
 3. Verify by running the **Refresh TOC** Templater command (in
    `9 Orga/Templater/Refresh TOC.md`) on an existing literature note.
@@ -41,6 +40,11 @@ Helpers that the Templater plugin loads as `tp.user.<name>` once the
   tempfile so it doesn't fight Zotero's lock.
 - `extractPdfToc.js` — Templater user function that shells out to the
   Python helper and returns its stdout. Exposed as `tp.user.extractPdfToc`.
+- `pdf_to_markdown.py` — resolves the same Zotero PDF, converts it to
+  Markdown with `pymupdf4llm`, and writes
+  `1 Literature/Full Text/<citekey> (full text).md`. Prints the path.
+- `pdfToMarkdown.js` — Templater user function that runs it and returns
+  the new file's vault-relative path. Exposed as `tp.user.pdfToMarkdown`.
 
 ## Wiring TOC into the import flow
 

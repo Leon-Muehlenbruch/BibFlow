@@ -19,6 +19,7 @@ dv.table(
 ```dataview
 LIST file.mtime
 FROM "1 Literature"
+WHERE !contains(file.folder, "Full Text")
 SORT file.mtime DESC
 LIMIT 10
 ```
@@ -37,6 +38,7 @@ dv.table(["Author", "Papers"], rows);
 ```dataview
 TABLE length(rows) AS "Papers", rows.file.link AS "Notes"
 FROM "1 Literature"
+WHERE citekey
 GROUP BY year
 SORT year DESC
 ```
