@@ -7,6 +7,16 @@ nav_order: 4
 
 BibFlow is built to be driven by an AI coding assistant. [Claude Code](https://claude.com/claude-code) — Anthropic's CLI — can run the helper scripts, import and synthesise papers, keep notes linked, and commit to GitHub for you. None of this is required; the vault works fine by hand. But if you want the assist, here is the setup.
 
+## One-shot install with an agent
+
+You can have an agent install BibFlow from scratch. Point Claude Code — or the Claude desktop app with **Desktop Commander** (an MCP server that gives it shell + file access) — at the install runbook and ask:
+
+> install BibFlow as a new Obsidian vault on my machine
+
+It follows [`AGENT-INSTALL.md`](https://github.com/Leon-Muehlenbruch/BibFlow/blob/main/AGENT-INSTALL.md): confirm a location, install prerequisites (Obsidian, Python, Node, git), clone, wire up the Python helpers, and open the vault — then walks you through the short Zotero hand-off. Because the plugins, theme, hotkeys, and Zotero import format all ship inside the repo, the agent mostly installs and verifies rather than configures.
+
+[Download the runbook](assets/AGENT-INSTALL.md){:download="AGENT-INSTALL.md"} to hand to an agent that cannot reach the repo directly.
+
 ## What helps to have
 
 - **Claude Code** plus a plan that includes it — Claude **Pro** is enough to start, **Max** for heavy use — or an **Anthropic API key**. Install with `npm install -g @anthropic-ai/claude-code`, then run `claude` from inside the vault folder.
