@@ -38,7 +38,13 @@ Obsidian → Settings → Obsidian Git:
 
 ## Mass-deletion guard
 
-The vault ships with a pre-commit hook at `.git/hooks/pre-commit` that refuses commits with 10+ deletions. To bypass intentionally:
+BibFlow ships a pre-commit hook — `.githooks/pre-commit` — that refuses any commit removing 10 or more files at once. Git does not copy hooks on clone, so activate it once per machine by pointing git at the versioned hooks folder:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Then, to bypass it intentionally for a genuine large deletion:
 
 ```bash
 git commit --no-verify -m "<reason>"
