@@ -8,7 +8,7 @@
   "exportFormats": [
     {
       "name": "Literature Note",
-      "outputPathTemplate": "1 Literature/{{citekey}}.md",
+      "outputPathTemplate": "1 Literature/Paper Notes/{{citekey}}.md",
       "imageOutputPathTemplate": "9 Orga/_attachments/Zotero/",
       "imageBaseNameTemplate": "{{citekey}}",
       "templatePath": "9 Orga/Templates/Literature Note.md"
