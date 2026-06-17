@@ -16,6 +16,7 @@ Import Paper from Zotero
 Fetch References for the current paper
 Set Reading Status
 Refresh TOC for the current paper
+Convert Paper to Markdown
 Link In-Text Citations
 Promote selection to concept note
 
@@ -34,6 +35,7 @@ Show Git Status
 | Fetch References for the current paper | reads the open notes DOI, queries OpenAlex, writes a list of cited works under `## Cited works` |
 | Set Reading Status                   | picks one of `#paper/to-read · skimmed · referenced · fully-read` and writes it into the notes status block. Drives the [Reading Queue](vault-tour#reading-queue) board. |
 | Refresh TOC for the current paper    | extracts the PDFs bookmark outline (via `extract_pdf_toc.py`) into the notes `## Table of contents` block. Needs the [helper venv](obsidian#optional-pdf-toc-extraction). |
+| Convert Paper to Markdown            | converts the PDF to searchable Markdown at `1 Literature/Full Text/<citekey> (full text).md` (via `pymupdf4llm`), then opens it. With many papers, Cmd+F across the vault then pinpoints which paper a quote came from. Needs the [helper venv](obsidian#optional-pdf-toc-extraction). |
 | Link In-Text Citations               | wraps parenthetical citations like `(Smith 2023)` in the note body as `[[wikilinks]]` that resolve through each papers `aliases`. Idempotent — safe to re-run. |
 | Promote selection to concept note    | takes the selected text, creates `2 Wiki/Concept Notes/<text>.md` from the Concept Note template, replaces the selection with `[[<text>]]`. If the concept already exists, just inserts the wikilink. |
 
@@ -46,13 +48,14 @@ Show Git Status
 
 ## Helper scripts (`tp.user.*`)
 
-A few commands lean on reusable JavaScript helpers in `9 Orga/Templater Scripts/`, which Templater loads as `tp.user.<name>`. The vault ships with Templaters **User script files** folder already pointed at that directory, so they work out of the box — except the PDF-TOC helper, which needs a one-time Python venv (see [Obsidian setup](obsidian#optional-pdf-toc-extraction)).
+A few commands lean on reusable JavaScript helpers in `9 Orga/Templater Scripts/`, which Templater loads as `tp.user.<name>`. The vault ships with Templaters **User script files** folder already pointed at that directory, so they work out of the box — except the two PDF helpers (TOC extraction and Markdown conversion), which need a one-time Python venv (see [Obsidian setup](obsidian#optional-pdf-toc-extraction)).
 
 | Helper                     | Used by                | Does                                                          |
 |----------------------------|------------------------|--------------------------------------------------------------|
 | `ensureStatusDefault`      | Refresh All Literature | fills an empty status block with `#paper/to-read`, dedupes tags |
 | `ensureAbstract`           | Refresh All Literature | drops a placeholder into an empty abstract block so you always have somewhere to type |
 | `extractPdfToc`            | Refresh TOC            | shells out to `extract_pdf_toc.py` for the PDF outline        |
+| `pdfToMarkdown`            | Convert Paper to Markdown | shells out to `pdf_to_markdown.py` to write the PDF's full text as Markdown |
 | `groupHighlightsBySection` | Refresh All Literature | inserts chapter headings into the Highlights section by page  |
 | `linkInTextCitations`      | Link In-Text Citations | wraps `(Author Year)` as `[[wikilinks]]`                       |
 

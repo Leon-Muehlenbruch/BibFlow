@@ -14,7 +14,7 @@ The BibFlow vault has a fixed structure. Each folder has one role; the numeric p
 |------------------------------|-------------------------------------------------------------|
 | `0 Meta/Library/`            | dashboards over your library + Python helpers (auto-refreshed) |
 | `0 Meta/Planning/`           | hand-edited project material (Roadmap, supervisor brief)    |
-| `1 Literature/`              | one note per paper, named by its citekey                    |
+| `1 Literature/`              | one note per paper, named by its citekey (PDF full-text copies land in `Full Text/`) |
 | `2 Wiki/Concept Notes/`      | atomic ideas linked from many papers                        |
 | `2 Wiki/Method Notes/`       | protocols, procedures, recipes                              |
 | `3 Writing/`                 | drafts and exported chapters (start sections from the Draft Section Block template) |

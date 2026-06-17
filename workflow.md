@@ -35,6 +35,8 @@ Creates `1 Literature/{{citekey}}.md` with metadata, an abstract, highlights spl
 ![The freshly-imported literature note: frontmatter, abstract, highlights grouped by colour, and empty persist blocks ready for synthesis.](assets/screenshots/import-obsidian-2.png)
 
 > **Optional.** Run **Refresh TOC** (Launcher) to pull the PDFs table of contents into the note. Once a note has a TOC, **Refresh All Literature** also regroups its highlights under the matching chapter headings. Needs the one-time [helper venv](obsidian#optional-pdf-toc-extraction).
+>
+> **Optional.** Run **Convert Paper to Markdown** to drop the PDFs full text into `1 Literature/Full Text/`. With many papers imported, a vault-wide Cmd+F then pinpoints which paper a quote or phrase came from.
 
 ## 4. Synthesise
 

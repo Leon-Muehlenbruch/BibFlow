@@ -47,12 +47,12 @@ Without this, your imported Zotero highlights still render — just in a flat br
 
 ## Optional: PDF TOC extraction
 
-Most commands work immediately. One — **Refresh TOC**, which reads a PDF's bookmark outline into the note — needs a small Python dependency (`pypdf`). Templater's *User script files* folder is already pointed at `9 Orga/Templater Scripts/`, so all you add is a self-contained venv. From the vault root in Terminal:
+Most commands work immediately. Two need a small Python dependency: **Refresh TOC** reads a PDF's bookmark outline (`pypdf`), and **Convert Paper to Markdown** turns a PDF into searchable full text (`pymupdf4llm`). Templater's *User script files* folder is already pointed at `9 Orga/Templater Scripts/`, so all you add is a self-contained venv. From the vault root in Terminal:
 
 ```bash
 cd "9 Orga/Templater Scripts"
 python3 -m venv .venv
-.venv/bin/pip install pypdf
+.venv/bin/pip install pypdf pymupdf4llm
 ```
 
-The helper auto-detects this venv and falls back to a system `python3` if it is missing. The `.venv/` is git-ignored, so set it up once per machine. Full notes live in `9 Orga/Templater Scripts/README.md`. Skip this if you do not use the TOC feature — everything else still works.
+The helpers auto-detect this venv and fall back to a system `python3` if it is missing. The `.venv/` is git-ignored, so set it up once per machine. Full notes live in `9 Orga/Templater Scripts/README.md`. Skip this if you use neither feature — everything else still works.
