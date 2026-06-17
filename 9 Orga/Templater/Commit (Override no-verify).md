@@ -43,5 +43,5 @@ if (choice !== "go") {
   return;
 }
 
-await tp.user.gitCommitNoVerify();
+await tp.user.gitCommitNoVerify(tp);
 -%>

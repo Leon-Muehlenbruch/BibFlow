@@ -81,10 +81,24 @@ def find_pdf_path(zotero_db: str, citekey: str) -> str | None:
 
 
 def convert_to_markdown(pdf_path: str) -> str:
-    """Convert a PDF to Markdown text using pymupdf4llm. Raises on failure."""
+    """Convert a PDF to Markdown text using pymupdf4llm. Raises on failure.
+
+    PyMuPDF and its Tesseract OCR path write parser/progress messages to the
+    process's stdout. Redirect the OS-level stdout (fd 1) to stderr for the
+    duration of the conversion so none of that pollutes our stdout contract —
+    which is the output path, alone, on the final line.
+    """
     import pymupdf4llm  # imported lazily so the import error is reportable
 
-    return pymupdf4llm.to_markdown(pdf_path, show_progress=False)
+    sys.stdout.flush()
+    saved_fd = os.dup(1)
+    os.dup2(2, 1)
+    try:
+        return pymupdf4llm.to_markdown(pdf_path, show_progress=False)
+    finally:
+        sys.stdout.flush()
+        os.dup2(saved_fd, 1)
+        os.close(saved_fd)
 
 
 def build_document(citekey: str, body: str) -> str:
