@@ -20,7 +20,7 @@ const STATUSES = [
   { tag: "paper/fully-read", label: "✅ Fully read" },
 ];
 
-const papers = dv.pages('"1 Literature"').where((p) => p.citekey);
+const papers = dv.pages('"1 Literature/Paper Notes"').where((p) => p.citekey);
 
 // Bucket each paper by the first status tag it carries. `file.etags`
 // holds the tags exactly as written (e.g. "#paper/to-read"), unlike

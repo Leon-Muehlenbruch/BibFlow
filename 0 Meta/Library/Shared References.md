@@ -1,6 +1,6 @@
 Not yet imported references, referenced by more than one paper under "1 Literature".
 ```dataviewjs
-const pages = dv.pages('"1 Literature"');
+const pages = dv.pages('"1 Literature/Paper Notes"');
 
 const counts = {};       // citekey -> count
 const sources = {};      // citekey -> [source file links]

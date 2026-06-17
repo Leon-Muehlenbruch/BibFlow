@@ -6,7 +6,7 @@ const surname = (p) => {
   return String(first).trim().split(/\s+/).pop().toLowerCase();
 };
 
-const papers = dv.pages('"1 Literature"')
+const papers = dv.pages('"1 Literature/Paper Notes"')
   .where((p) => p.citekey)
   .sort((p) => surname(p) + " " + (p.year ?? ""));
 
@@ -18,7 +18,7 @@ dv.table(
 ## Recently edited notes
 ```dataview
 LIST file.mtime
-FROM "1 Literature"
+FROM "1 Literature/Paper Notes"
 WHERE !contains(file.folder, "Full Text")
 SORT file.mtime DESC
 LIMIT 10
@@ -26,7 +26,7 @@ LIMIT 10
 ## Most Cited Authors
 ```dataviewjs
 const counts = {};
-for (const p of dv.pages('"1 Literature"')) {
+for (const p of dv.pages('"1 Literature/Paper Notes"')) {
   if (!p.authors) continue;
   for (const a of p.authors) counts[a] = (counts[a] || 0) + 1;
 }
@@ -37,7 +37,7 @@ dv.table(["Author", "Papers"], rows);
 ## Literature sorted by year
 ```dataview
 TABLE length(rows) AS "Papers", rows.file.link AS "Notes"
-FROM "1 Literature"
+FROM "1 Literature/Paper Notes"
 WHERE citekey
 GROUP BY year
 SORT year DESC

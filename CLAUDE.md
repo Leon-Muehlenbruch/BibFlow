@@ -17,7 +17,8 @@ committing changes.
 |------|------|
 | `0 Meta/Library/`        | Dataview dashboards + Python helpers. The tables are generated — don't hand-edit them. |
 | `0 Meta/Planning/`       | hand-written planning (Roadmap, brief). |
-| `1 Literature/`          | one note per paper; filename **is** the citekey. |
+| `1 Literature/Paper Notes/` | one note per paper; filename **is** the citekey. |
+| `1 Literature/Topics/`   | topic MOCs — synthesise papers by theme (see the "update topics" workflow). |
 | `2 Wiki/Concept Notes/`  | atomic concept notes (feed the Glossary). |
 | `2 Wiki/Method Notes/`   | protocols, procedures. |
 | `3 Writing/`             | drafts; new sections start from `9 Orga/Templates/Draft Section Block.md`. |
@@ -27,10 +28,17 @@ committing changes.
 
 ## Conventions
 
+- **Language & quotes**: write your own prose in the vault's working language. **Never translate or alter a verbatim source quote** — keep it byte-for-byte in the source's language (quote marks, numbers, units, page refs unchanged).
 - **Citekeys**: Better-BibTeX style `authoryeartitleword` (e.g. `chuo2020insights`). The filename in `1 Literature/` matches the citekey; frontmatter carries `citekey`, `doi`, `year`, `authors`, `intext`, `aliases`.
 - **Persist blocks**: in the Literature Note, `{% persist %}` regions (marked `%% begin x %%` … `%% end x %%`) survive Zotero re-imports. **Never overwrite a user's synthesis** — summary, key findings, connections, open questions, references. Only the abstract / TOC / status / highlight machinery is regenerated.
 - **Highlights**: Yellow → General, Green → Key terms, Blue → Media.
 - **Reading status**: `#paper/{to-read, skimmed, referenced, fully-read}` in the status block; drives the Reading Queue board.
+
+## Workflows
+
+- **"update topics"** — rebuild/extend the topic MOCs in `1 Literature/Topics/`
+  from the analysed per-paper notes. Runbook:
+  [`0 Meta/AI/Update Topics.md`](0%20Meta/AI/Update%20Topics.md).
 
 ## Helper scripts
 

@@ -19,7 +19,7 @@ from pathlib import Path
 # <vault>/0/fetch_metrics.py; adjust VAULT_ROOT if you move it elsewhere.
 SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0 Meta/Library
 VAULT_ROOT = SCRIPT_DIR.parent.parent                     # <vault>
-LIT_DIR  = VAULT_ROOT / "1 Literature"
+LIT_DIR  = VAULT_ROOT / "1 Literature" / "Paper Notes"
 OUT_PATH = SCRIPT_DIR / "Paper Metrics.md"
 CONTACT = "leonmuehlenbruch@gmail.com"  # polite-pool for OpenAlex
 

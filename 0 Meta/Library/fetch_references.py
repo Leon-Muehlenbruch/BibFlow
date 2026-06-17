@@ -10,7 +10,7 @@ Usage
 
 What it does
 ------------
-1. Reads <vault>/1 Literature/<citekey>.md, pulls its DOI from the YAML.
+1. Reads <vault>/1 Literature/Paper Notes/<citekey>.md, pulls its DOI from the YAML.
 2. Calls OpenAlex for the paper's `referenced_works` (list of OpenAlex IDs).
 3. Batch-fetches metadata for every reference (title, authors, year, journal).
 4. For each reference, generates a Better-BibTeX-style citekey
@@ -40,7 +40,7 @@ from pathlib import Path
 # --- paths (resolved relative to this script) --------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent       # <vault>/0 Meta/Library
 VAULT_ROOT = SCRIPT_DIR.parent.parent                     # <vault>
-LIT_DIR    = VAULT_ROOT / "1 Literature"
+LIT_DIR    = VAULT_ROOT / "1 Literature" / "Paper Notes"
 
 CONTACT = "leonmuehlenbruch@gmail.com"             # OpenAlex polite pool
 UA = f"PaperRefs/1.0 (mailto:{CONTACT})"
