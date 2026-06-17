@@ -50,7 +50,11 @@ async function pdfToMarkdown(citekey, zoteroDbOverride) {
       (err, stdout, stderr) => {
         if (err) {
           console.error("[pdfToMarkdown] error:", err, stderr);
-          new Notice(`Convert to Markdown failed: ${(stderr || err.message).split("\n")[0]}`);
+          // The helper prints its error as the last stderr line (PyMuPDF/OCR
+          // chatter may precede it), so surface that rather than the first.
+          const msg =
+            (stderr || "").trim().split("\n").filter(Boolean).pop() || err.message;
+          new Notice(`Convert to Markdown failed: ${msg}`);
           resolve(null);
           return;
         }

@@ -43,6 +43,9 @@ Helpers that the Templater plugin loads as `tp.user.<name>` once the
 - `pdf_to_markdown.py` — resolves the same Zotero PDF, converts it to
   Markdown with `pymupdf4llm`, and writes
   `1 Literature/Full Text/<citekey> (full text).md`. Prints the path.
+  Born-digital PDFs need nothing extra; scanned / image-only pages are
+  OCR'd automatically **if Tesseract is installed** (`brew install
+  tesseract`), otherwise those pages yield little text.
 - `pdfToMarkdown.js` — Templater user function that runs it and returns
   the new file's vault-relative path. Exposed as `tp.user.pdfToMarkdown`.
 
