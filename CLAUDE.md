@@ -37,8 +37,8 @@ committing changes.
 ## Workflows
 
 - **"update topics"** — rebuild/extend the topic MOCs in `1 Literature/Topics/`
-  from the analysed per-paper notes. Runbook:
-  [`0 Meta/AI/Update Topics.md`](0%20Meta/AI/Update%20Topics.md).
+  from the analysed per-paper notes. Runs via the **`update-topics` skill**
+  (`.claude/skills/update-topics/`).
 
 ## Helper scripts
 

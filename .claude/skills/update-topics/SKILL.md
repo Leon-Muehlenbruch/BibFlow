@@ -1,7 +1,12 @@
-# Workflow: "update topics"
+---
+name: update-topics
+description: Rebuild or extend the Topic MOCs in 1 Literature/Topics/ by synthesising the analysed per-paper literature notes. Use when the user says "update topics", or asks to refresh/rebuild the topic maps-of-content from the paper notes.
+---
 
-When the user says **"update topics"**, refresh the topic MOCs in
-`1 Literature/Topics/` from the analysed per-paper notes in `1 Literature/Paper Notes/`.
+# Update Topics
+
+Refresh the Topic MOCs in `1 Literature/Topics/` from the analysed per-paper
+notes in `1 Literature/Paper Notes/`.
 
 ## What a Topic MOC is
 A Map of Content that gathers the papers of one theme and synthesises **how they
@@ -30,5 +35,5 @@ relate** — not a flat list. One file per topic (`Topic - ….md`), tagged
 - Reference papers by wikilink (`[[citekey]]`), never by path.
 - Never invent contributions — every claim traces to a paper note. If a note is
   thin, say so rather than embellish.
-- Keep verbatim source quotes in their original language (see [`CLAUDE.md`](../../CLAUDE.md)).
-- Preserve each Topic note's frontmatter `aliases` (they keep older links resolving).
+- Keep verbatim source quotes in their original language (see the vault `CLAUDE.md`).
+- Preserve each Topic note's frontmatter `aliases`.
